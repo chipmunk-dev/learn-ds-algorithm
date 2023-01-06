@@ -6,4 +6,5 @@
 - [단어 뒤집기](https://www.acmicpc.net/problem/9093) 2022-12-8
 - [괄호](https://www.acmicpc.net/problem/9012) 2022-12-31
 - [스택수열](https://www.acmicpc.net/problem/1874) 2023-1-3
-- [에디터](https://www.acmicpc.net/problem/1406) 2323-1-4
+- [에디터](https://www.acmicpc.net/problem/1406) 2023-1-4
+- [단어뒤집기2](https://www.acmicpc.net/problem/17413) 2023-1-6
