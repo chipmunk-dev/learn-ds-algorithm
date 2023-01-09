@@ -8,3 +8,4 @@
 - [스택수열](https://www.acmicpc.net/problem/1874) 2023-1-3
 - [에디터](https://www.acmicpc.net/problem/1406) 2023-1-4
 - [단어뒤집기2](https://www.acmicpc.net/problem/17413) 2023-1-6
+- [쇠막대기](https://www.acmicpc.net/problem/10799) 2023-1-9
