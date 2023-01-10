@@ -1,38 +1,40 @@
-import java.util.Scanner;
 import java.util.Stack;
+import java.util.StringTokenizer;
+import java.io.*;
 
 public class Main {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+    StringBuilder sb = new StringBuilder();
+    Stack<Integer> stack = new Stack<>();
 
-		Scanner in = new Scanner(System.in);
-		Stack<Integer> stack = new Stack<Integer>();
+    int size = Integer.parseInt(br.readLine());
+    int[] arr = new int[size];
 
-		int N = in.nextInt();
-		int[] seq = new int[N];
+    StringTokenizer st = new StringTokenizer(br.readLine());
+    for(int i=0; i<size; i++) {
+      arr[i] = Integer.parseInt(st.nextToken());
+    }
 
-		for(int i = 0; i < N; i++) {
-			seq[i] = in.nextInt();
-		}
+    for(int i=0; i<size; i++) {
+      while(!stack.empty() && arr[stack.peek()] < arr[i]) {
+        arr[stack.pop()] = arr[i];
+      }
 
+      stack.push(i);
+    }
 
-		for(int i = 0; i < N; i++) {
-			while(!stack.isEmpty() && seq[stack.peek()] < seq[i]) {
-				seq[stack.pop()] = seq[i];
-			}
+    while(!stack.empty()) {
+      arr[stack.pop()] = -1;
+    }
 
-			stack.push(i);
-		}
+    for(int i : arr) {
+      sb.append(i).append(' ');
+    }
 
-		while(!stack.isEmpty()) {
-			seq[stack.pop()] = -1;
-		}
-
-		StringBuilder sb = new StringBuilder();
-
-		for(int i = 0; i < N; i++) {
-			sb.append(seq[i]).append(' ');
-		}
-
-		System.out.println(sb);
+    bw.write(sb.toString());
+    bw.close();
+    br.close();
 	}
 }
