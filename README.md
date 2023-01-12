@@ -9,3 +9,4 @@
 - [에디터](https://www.acmicpc.net/problem/1406) 2023-1-4
 - [단어뒤집기2](https://www.acmicpc.net/problem/17413) 2023-1-6
 - [쇠막대기](https://www.acmicpc.net/problem/10799) 2023-1-9
+- [오큰수](https://www.acmicpc.net/problem/17298) 2023-1-11
